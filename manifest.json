@@ -1,0 +1,28 @@
+{
+    "name": "SIMPLIFY WEB TO SERIAL PORTS",
+    "description": "Allows Simply Web to communicate to Hardware Via Serial Ports",
+    "version": "0.1",
+    "manifest_version": 2,
+    "app": {
+      "background": {
+        "scripts": ["background.js"]
+      }
+    },
+
+      "externally_connectable": {
+        "ids": ["khkmlgclfjhikboadenphgacjocmkhch"],
+        "matches": ["http://localhost:4200/*"]
+      },
+      
+
+    "icons": {"128": "simplify-16.png" },
+    "permissions": [
+      "serial",
+      "http://localhost:4200/*",
+      "notifications"
+    ]
+
+
+
+
+  }
